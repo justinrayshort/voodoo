@@ -1,11 +1,11 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">voodoo</a>
+﻿<div class="top-row pl-4 navbar navbar-dark content-center">
+    <a class="navbar-brand text-center display-3" href="/">VooDoo!</a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
 </div>
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+<div class="@NavMenuCssClass content-center" @onclick="ToggleNavMenu">
     <ul class="nav flex-column">
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
@@ -20,6 +20,11 @@
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="fetchdata">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="info">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Info
             </NavLink>
         </li>
     </ul>
